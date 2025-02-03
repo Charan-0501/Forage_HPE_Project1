@@ -6,6 +6,7 @@ public class EmployeeManager {
 
     Employees employees;
 
+
     public EmployeeManager() {
         employees = new Employees();
         employees.getEmployee_list().add(new Employee(9391234,"shiva","reddy","shivareddy@gmail.com","software developer 2"));
@@ -14,6 +15,12 @@ public class EmployeeManager {
         employees.getEmployee_list().add(new Employee(6281234,"sudheer","konda","sudheerkonda@gmail.com","data analyst "));
     }
     public Employees getEmployees(){
+
         return this.employees;
     }
+
+    public void addemployee(Employee emp){
+        employees.getEmployee_list().add(emp);
+    }
+
 }
